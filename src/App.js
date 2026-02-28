@@ -15,7 +15,7 @@ export default function App() {
     
     try {
       // Mengambil API Key dari Environment Variable Vercel
-      const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+      const apiKey = "AIzaSyABq4SpbF9Xhw4xunlSO6w49imqxRFSoMM";
       
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
         method: 'POST',
